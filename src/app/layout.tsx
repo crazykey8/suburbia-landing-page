@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { SVGFilters } from '@/components/SVGFilters'
 // TODO 自定义字体
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Header />
         <main>{children}</main>
+        <Footer />
         <SVGFilters />
       </body>
     </html>

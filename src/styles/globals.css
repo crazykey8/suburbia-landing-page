@@ -43,10 +43,9 @@
   }
 }
 
-
 .stack-layout {
   display: grid;
-  grid-template-areas: "stack";
+  grid-template-areas: 'stack';
   place-items: center;
 }
 
@@ -64,4 +63,17 @@
 
 .skater:hover .skater-scribble-path {
   stroke-dashoffset: 0;
+}
+
+/* 全局渐显动画 */
+.slide-in-hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
